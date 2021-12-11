@@ -38,11 +38,6 @@ public class contactUs_Steps {
         contactUs_page.typeEmail();
     }
 
-    @And("^type Order reference \"([^\"]*)\"$")
-    public void typeOrderReference(String order) throws Throwable {
-        contactUs_page.typeOrderReference(order);
-    }
-
     @Given("^type a message$")
     public void type_a_message() throws Throwable {
         contactUs_page.typeMessage();
@@ -56,6 +51,17 @@ public class contactUs_Steps {
     @Then("^verify success message$")
     public void verify_success_message() throws Throwable {
         contactUs_page.assertMyMessage();
+    }
+
+    @After
+    public void driverQuit() throws InterruptedException {
+        Thread.sleep(2000);
+        Driver.closeDriver();
+    }
+
+    @And("^type Order reference \"([^\"]*)\"$")
+    public void typeOrderReference(String order) throws Throwable {
+        contactUs_page.typeOrderReference(order);
     }
 
 }

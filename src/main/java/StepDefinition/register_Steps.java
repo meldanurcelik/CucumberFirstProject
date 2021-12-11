@@ -66,5 +66,4 @@ public class register_Steps {
         Thread.sleep(2000);
         Driver.getDriver();
     }
-
 }
