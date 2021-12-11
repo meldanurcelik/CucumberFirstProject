@@ -4,7 +4,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-public class login_steps {
+public class login_Steps {
 
     @Given("^Go to Amazon site$")
     public void go_to_amazon_site() throws Throwable {
