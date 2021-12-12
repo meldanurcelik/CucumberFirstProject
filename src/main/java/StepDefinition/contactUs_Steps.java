@@ -56,7 +56,7 @@ public class contactUs_Steps {
     @After
     public void driverQuit() throws InterruptedException {
         Thread.sleep(2000);
-        Driver.closeDriver();
+        Driver.quitDriver();
     }
 
     @And("^type Order reference \"([^\"]*)\"$")

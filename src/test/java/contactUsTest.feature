@@ -1,3 +1,4 @@
+@SmokeTest
 Feature: Contact Us Test
 
   Scenario: Go to website and test Contact us Page

@@ -1,3 +1,4 @@
+@RegressionTest
 Feature: Register Test
 
   Background:

@@ -1,3 +1,4 @@
+@RegressionTest
 Feature: Login Test
 
   Scenario: Go to amazon website and test login page
